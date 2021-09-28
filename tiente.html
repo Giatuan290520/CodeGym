@@ -1,0 +1,79 @@
+<form name="euroform">
+
+    <table border=1 cellpadding=3 cellspacing=0>
+        <td align=center colspan=6>Euro Converter</td>
+        <tr>
+            <td align=center>
+                <input type=button value="ATS" onClick="locate(this.form,'Austria','Schilling',13.7603)">
+            </td>
+            <td align=center>
+                <input type=button value="BEF" onClick="locate(this.form,'Belgium','Franc',40.3399)">
+            </td>
+            <td align=center>
+                <input type=button value="DEM" onClick="locate(this.form,'Germany','Mark',1.95583)">
+            </td>
+            <td align=center>
+                <input type=button value="ESP" onClick="locate(this.form,'Spain','Peseta',166.386)">
+            </td>
+            <td align=center>
+
+                <input type=button value="FRF" onClick="locate(this.form,'France','Franc',6.55957)">
+            </td>
+            <td align=center>
+                <input type=button value="IEP " onClick="locate(this.form,'Ireland','Pound',0.787564)">
+            </td>
+        </tr>
+        <tr>
+            <td align=center>
+                <input type=button value=" ITL " onClick="locate(this.form,'Italy','Lira',1936.27)">
+            </td>
+            <td align=center>
+                <input type=button value="NLG" onClick="locate(this.form,'Holland','Guilder',2.20371)">
+            </td>
+            <td align=center>
+                <input type=button value="LUF" onClick="locate(this.form,'Luxembourg','Franc',40.3399)">
+            </td>
+            <td align=center>
+
+                <input type=button value="PTE" onClick="locate(this.form,'Portugal','Escudo',200.482)">
+            </td>
+            <td align=center>
+                <input type=button value="FIM " onClick="locate(this.form,'Finland','Mark',5.94573)">
+            </td>
+            <td align=center>
+                <input type=reset value="Reset">
+            </td>
+        </tr>
+        <tr>
+            <td colspan=6 align=center>
+                Country: <INPUT NAME="country" SIZE=8>
+
+                Currency: <INPUT NAME="currency" SIZE=8>
+            </td>
+
+        </tr>
+        <tr>
+            <td colspan=2 align=center>
+                <input name="euro1" size=8> Euro
+            </td>
+            <td colspan=2 align=center>
+                <input type=button value="equals" onClick="toLocal(this.form)">
+            </td>
+            <td colspan=2 align=center>
+                <input name="local1" size=8> Local
+            </td>
+        </tr>
+        <tr>
+            <td colspan=2 align=center>
+                <input name="local2" size=8> Local
+
+            </td>
+            <td colspan=2 align=center>
+                <input type=button value="equals" onClick="toEuro(this.form)">
+            </td>
+            <td colspan=2 align=center>
+                <input name="euro2" SIZE=8> Euro
+            </td>
+        </tr>
+    </table>
+</form>

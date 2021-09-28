@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript: BMI calculator</title>
+</head>
+<style>
+    body {
+        background-color: #0f9b8f;
+        text-align: center;
+        margin-top: 45px;
+        font-family: monospace, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .values {
+        width: 100px;
+        margin-right: 4px;
+    }
+
+    #num1 {
+        margin-left: 2px;
+    }
+
+    .firstLabel {
+        margin-left: -5px;
+    }
+
+    #gender {
+        margin-left: -5px;
+    }
+
+    #btn {
+        border: solid rgb(109, 107, 116) 2px;
+        border-radius: 25%;
+    }
+
+    #btn:hover {
+        background-color: #fefecc;
+        font-weight: bold;
+    }
+
+    h4 {
+        padding-top: 25px;
+    }
+
+    #result {
+        border: solid rgb(179, 12, 12) 2px;
+        border-radius: 25%;
+        width: 150px;
+        padding-top: 10px;
+        position: relative;
+        left: 23%;
+        height: 40px;
+        margin: 20px;
+        text-align: center;
+        background-color: rgb(52, 9, 155);
+        font-size: 20px;
+    }
+
+    #calc {
+        border: solid rgb(122, 17, 17) 3px;
+        width: 350px;
+        height: 350px;
+        border-radius: 8%;
+        text-align: center;
+        padding: 15px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        position: absolute;
+        top: 18%;
+        left: 36%;
+        background-color: #746972;
+    }
+
+    #message {
+        font-weight: bold;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    @media (max-width:815px) {
+
+        #calc {
+            position: relative;
+            width: 50%;
+            margin-left: -70px;
+            padding-bottom: 55px;
+        }
+
+        #result {
+            position: relative;
+            width: 34%;
+            left: 22%;
+        }
+
+        #radio {
+            position: relative;
+            width: 78%;
+        }
+
+        #num1 {
+            margin-left: -3px;
+            margin-right: 4px;
+        }
+
+        #num2 {
+            margin-left: -6px;
+            margin-right: 6px;
+        }
+
+        .secondLabel {
+            margin-left: 90px;
+        }
+    }
+</style>
+
+<body>
+    <h1>BMI calculator</h1>
+    <form id="calc">
+        <div class="firstLabel">
+            <label>Your height: </label>
+            <input class="values" type="text" id="num1" required><label class="secondLabel">centimetres</label>
+        </div>
+        <br>
+        <div>
+            <label>Your weight:</label>
+            <input class="values" type="text" id="num2" required><label class="secondLabel">kilogrammes</label>
+        </div>
+        <br>
+        <div id="gender">
+            <input name="gender" type="radio" value="0" checked>
+            <label>Female</label>
+            <input name="gender" type="radio" value="1">
+            <label>Male</label>
+        </div>
+        <br>
+        <button id="btn" type="submit" class="btn btn-primary">Calculate</button>
+        <div>
+            <h4>Your BMI:</h4>
+            <p id="result"></p>
+        </div>
+        <br>
+        <p id="message"></p>
+    </form>
+    <script type="text/javascript" src="appcannang.js"></script>
+</body>
+
+</html>
